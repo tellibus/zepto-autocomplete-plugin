@@ -1,4 +1,4 @@
 zepto-autocomplete-plugin
 =========================
 
-плагин автозаполнения на zepto
+Autocomplete Plugin for Zepto

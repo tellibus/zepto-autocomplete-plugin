@@ -12,10 +12,10 @@
   		}, options);
 
   		var $this = this;
-      //Для контроля инициализации
+      //Для контроля инициализации = To initialize the control
       var data = $this[0].externalData;
       var current = null;
-  		//если не проинициализирован для данного элемента
+  		//если не проинициализирован для данного элемента = if not initialized for this item
   		if (!data) {
         console.log('init')
         createStorage();
@@ -105,7 +105,7 @@
         }
       }
 
-  		//создание дива с подсказками
+  		//создание дива с подсказками = creating div with tips
   		function keyHandler(e) {
         var storage  = $this[0].externalData.storage;
         var settings = $this[0].externalData.settings;
@@ -169,9 +169,9 @@
         }
         return Object.keys(obj);
       }
-      //если не массив
+      //если не массив = if not an array
       if (Object.prototype.toString.call(field) != '[object Array]') {
-        //попробуем превратить в массив
+        //попробуем превратить в массив = try to transform into an array
         field = [field];
       }
 

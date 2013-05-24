@@ -16,10 +16,10 @@
             var maxOptions = $('#maxOptions').val();
 
             if (maxOptions) {
-              $('#cities').autoComplete({data: ['Москва', 'Санкт-Петербург', 'Дели', 'Лондон', 'Рим', 'Мадрид', 'Париж', 'Берлин', 'Вашингтон', 'Лиссабон', 'Бразилиа', 'Амстердам', 'Брюссель', 'Осло', 'Хельсинки', 'Копенгаген'], maxOptions: maxOptions, scrollable: scrollable});
+              $('#cities').autoComplete({data: ['Moscow', 'Saint Petersburg', 'Delhi', 'London', 'Rome', 'Madrid', 'Paris', 'Berlin', 'Washington', 'Lisbon', 'Brasilia', 'Amsterdam', 'Brussels', 'Oslo', 'Helsinki', 'Copenhagen'], maxOptions: maxOptions, scrollable: scrollable});
             }
             else {
-              $('#cities').autoComplete({data: ['Москва', 'Санкт-Петербург', 'Дели', 'Лондон', 'Рим', 'Мадрид', 'Париж', 'Берлин', 'Вашингтон', 'Лиссабон', 'Бразилиа', 'Амстердам', 'Брюссель', 'Осло', 'Хельсинки', 'Копенгаген'], scrollable: scrollable});
+              $('#cities').autoComplete({data: ['Moscow', 'Saint Petersburg', 'Delhi', 'London', 'Rome', 'Madrid', 'Paris', 'Berlin', 'Washington', 'Lisbon', 'Brasilia', 'Amsterdam', 'Brussels', 'Oslo', 'Helsinki', 'Copenhagen'], scrollable: scrollable});
             }
           });
           $('#off_plugin').change(function() {
@@ -34,11 +34,11 @@
             return false;
           });
 
-          $('#countries').autoComplete({data: ['США','Россия','Германия','Канада','ЮАР','Китай','Индия','Белоруссия','Украина','Иран','Сирия','Бразилия']});
-          $('#continents').autoComplete({data: ['Северная Америка','Южная Америка','Евразия', 'Африка', 'Австралия', 'Антарктида']});
-          $('#cities').autoComplete({data: ['Москва', 'Санкт-Петербург', 'Дели', 'Лондон', 'Рим', 'Мадрид', 'Париж', 'Берлин', 'Вашингтон', 'Лиссабон', 'Бразилиа', 'Амстердам', 'Брюссель', 'Осло', 'Хельсинки', 'Копенгаген'], maxOptions: 5, scrollable: true});
-          //!! это второе применение плагина не сработает, и не должно сработать, стоит защита от вторичного применения
-          $('#cities').autoComplete({data: ['Москва', 'Санкт-Петербург', 'Мадрид', 'Париж',  'Вашингтон'], maxOptions: 5});
+          $('#countries').autoComplete({data: ['USA', 'Russia', 'Germany', 'Canada', 'South Africa', 'China', 'India', 'Belarus', 'Ukraine', 'Iran', 'Syria', 'Brazil']});
+          $('#continents').autoComplete({data: ['North America', 'South America', 'Eurasia', 'Africa', 'Australia', 'Antarctica']});
+          $('#cities').autoComplete({data: ['Moscow', 'Saint Petersburg', 'Delhi', 'London', 'Rome', 'Madrid', 'Paris', 'Berlin', 'Washington', 'Lisbon', 'Brasilia', 'Amsterdam', 'Brussels', 'Oslo', 'Helsinki', 'Copenhagen'], maxOptions: 5, scrollable: true});
+          //!! This is the second application of the plugin will not work and is not going to work, is protection from the secondary use
+          $('#cities').autoComplete({data: ['Moscow', 'Saint Petersburg', 'Madrid', 'Paris', 'Washington'], maxOptions: 5});
       	});
       }(Zepto))
   	</script>
@@ -63,22 +63,22 @@
     </style>
   </head>
   <body>
-  <p class = "informer">Демо плагина автозаполнения (zepto framework)</p>
+  <p class = "informer">Demo plug-in auto-complete (zepto framework)</p>
   <form>
   	<fieldset>
-      <legend>Пример</legend>
-        <label for = "countries">Страны: </label><input autocomplete = "off" type = "text" id = "countries" class = "long"></input>
-        <label for = "continents">Континенты: </label><input autocomplete = "off" type = "text" id = "continents"></input>
+      <legend>Example</legend>
+        <label for = "countries">Country: </label><input autocomplete = "off" type = "text" id = "countries" class = "long"></input>
+        <label for = "continents">Continents: </label><input autocomplete = "off" type = "text" id = "continents"></input>
         <br/>
-        <label for = "cities">Города: &nbsp;</label><input autocomplete = "off" type = "text" id = "cities"></input>
+        <label for = "cities">Cities: &nbsp;</label><input autocomplete = "off" type = "text" id = "cities"></input>
         <br/>
-        <p style ="color: white"><b>Включение/выключение плагина для поля с городами</b><br/>
-          <input type = "radio" value = "on"  id = "on_plugin" name = "group1" checked>Включить плагин<br/>
-          <input type = "radio" value = "off" id = "off_plugin" name = "group1">Выключить плагин<br/>
-          <input type = "checkbox" name = "scrollable" id = "scrollable" checked>Скроллинг</input><br/>
-          <label for = "maxOptions">Допустимое максимальное количество вариантов</label><input type = "text" id = "maxOptions"></input>
+        <p style ="color: white"><b>Enable / disable plug-in to the field with cities</b><br/>
+          <input type = "radio" value = "on"  id = "on_plugin" name = "group1" checked>Activate the plugin<br/>
+          <input type = "radio" value = "off" id = "off_plugin" name = "group1">Turn off the plugin<br/>
+          <input type = "checkbox" name = "scrollable" id = "scrollable" checked>Scrolling</input><br/>
+          <label for = "maxOptions">The maximum allowable number of options</label><input type = "text" id = "maxOptions"></input>
         </p>
-        <label for = "addCity">Добавить город</label><input type = "text" id = "addCity"></input><button id = "add">+</button>
+        <label for = "addCity">Add city</label><input type = "text" id = "addCity"></input><button id = "add">+</button>
     </fieldset>
   </form>
   </body>
